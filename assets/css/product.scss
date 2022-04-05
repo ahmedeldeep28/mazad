@@ -1,0 +1,75 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/component/button';
+@import './sass/component/input';
+@import './sass/helpers/varibail';
+
+header .title{
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}
+
+.product-detils .slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.product-detils .slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-detils .plitte{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-detils .plitte .tube img{
+    width: 50px;
+    height: 60px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.product-detils .detils .product-name{
+    margin-top: 0;
+    color: $mainColor;
+}
+
+.product-detils .detils .descraption{
+    font-family: $fontText;
+    font-size: 16px;
+    @media (max-width:576px) {
+        font-size: 15px;
+    }
+}
+.product-detils .detils .salry{
+    font-size: 18px;
+    font-family: $fontText;
+    text-transform: capitalize;
+    font-size: #222;
+
+}
+.product-detils .detils .salry .price .number{
+    color: $seccess;
+    font-weight: bold;
+    font-size: 19px;
+}
+.product-detils .detils .salry .totel-salry .totel-number{
+    font-weight: bold;
+    font-size: 19px;
+}
+.input{
+    width: 150px;
+}
+
+.product-detils .detils .footer button{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: $fontText;
+}

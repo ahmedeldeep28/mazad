@@ -1,0 +1,78 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/component/button';
+@import './sass/component/input';
+@import './sass/helpers/varibail';
+
+
+.auth-card{
+    padding: 30px 25px;
+    background: #fffffe;
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 4, .1),
+    0 -4px 6px 0 rgba(12, 0, 4, .1);
+    border-radius: 5px;
+    position: relative;
+    margin-top: 80px;
+}
+.auth-card .head{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 13px;
+    background-color:$mainColor;
+    border-radius: 5px;
+    width: auto;
+}
+.auth-card .head .title{
+    color: #fffffe;
+    font-size: 20px;
+    font-family: $fontHeader;
+    font-weight: 100;
+    margin: 0;
+    text-transform: capitalize;
+}
+.socail{
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.socail li{
+    list-style: none;
+    cursor: pointer;
+}
+.socail li img{
+    width: 50px;
+    height: 50px;
+    @media (max-width:576px) {
+        width: 45px;
+        height: 45px;
+    }
+}
+.socail li a{
+    text-decoration: none;
+}
+
+.error{
+    font-size: 16px;
+    font-family: $fontText;
+    color: red;
+    margin: 6px 0px;
+}
+
+.auth .button{
+    font-size: 17px;
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}
+
+.auth-card .footer-text{
+    font-size: 19px;
+    font-family: $fontText;
+    @media (max-width:576px) {
+        font-size: 17px;
+    }
+}
+.auth-card .footer-text a{
+    color: $mainColor
+}

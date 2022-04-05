@@ -1,0 +1,33 @@
+@import '../helpers/varibail';
+.control{
+    margin-top: 17px;
+}
+.lable{
+    font-size: 17px;
+    font-family: $fontHeader;
+    color: $mainColor;
+    font-weight: bold;
+}
+.input{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    outline: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: $fontHeader;
+    border: 1px solid #ced4da;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: 8px;
+
+    &:focus{
+        box-shadow: 0 0 0 2.5px rgba($mainColor, .30)
+    }
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}

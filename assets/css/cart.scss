@@ -1,0 +1,124 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/helpers/varibail';
+@import './sass/component/button';
+@import './sass/component/input';
+
+.carts .head{
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: $fontHeader;
+    background-color: $darkColor !important;
+    color: #fff;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns:repeat(5,1fr) 30px;
+    align-items: center;
+    @media (max-width:576px) {
+        font-size: 15px;
+        // grid-template-columns:repeat(5,1fr);
+        
+    }
+    @media (max-width:720px) {
+        font-size: 16px;
+    }
+}
+.carts .card-item{
+    display: grid;
+    grid-template-columns:repeat(5,1fr) 30px;
+    flex-direction: row;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    background-color: $secondary;
+    height: 80px; 
+    // @media (max-width:576px) {
+    //     grid-template-columns:repeat(5,1fr);
+    // }
+}
+// @media (max-width:576px) {
+//     .card-item div:first-child,
+//     .carts .head div:first-child{
+//         display: none;
+//     }
+// }
+
+.carts .card-item .delete button{
+    font-size: 23px;
+    font-family: $fontHeader;
+    text-decoration: none;
+    color: rgb(253, 25, 25);
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+}
+.carts .card-item input{
+    width: 80px;
+
+    @media (max-width:720px) {
+        width: 70px;
+    }
+    @media (max-width:576px) {
+        width: 50px;
+    }
+}
+.card-item div{
+    width: auto;
+    font-family: $fontHeader;
+    font-size: 18px;
+    height: 80px;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:576px) {
+        font-size: 15px;
+    }
+    @media (max-width:720px) {
+        font-size: 16px;
+    }
+}
+
+
+
+.card-item div img{
+    width: 150px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    @media (max-width:576px) {
+        width: 100%;
+    }
+    @media (max-width:720px) {
+        width: 100%;
+    }
+}
+
+
+.carts .detils .title{
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}
+.carts .detils .total-salry{
+    font-size: 19px;
+    font-family: $fontText;
+    color: $seccess;
+    font-weight: bold;
+
+}
+.carts .detils .button{
+    text-transform: capitalize;
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+

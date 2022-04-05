@@ -1,0 +1,53 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/component/button';
+@import './sass/component/card';
+@import './sass/helpers/varibail';
+
+header .descraption{
+    font-size: 17px;
+    font-family: $fontText;
+    line-height: 1.3;
+    @media (max-width:576px) {
+        font-size: 15px;
+    }
+}
+header .anmete img{
+    width: 100%;
+    height: 100%;
+}
+header .text-welcome ol{
+    padding-right: 15px;
+}
+header .text-welcome ol li{
+    font-size: 18px;
+    margin-top: 6px;
+    font-family: $fontText;
+    font-weight: bold;
+    @media (max-width:576px) {
+        font-size: 16px;
+    }
+
+}
+.product{
+    margin-top: 80px;
+}
+
+.product .card .body .price .key{
+    font-size: 17px;
+    font-family: $fontHeader;
+    color: #000;
+    font-weight: 500;
+}
+.product .card .body .price .value{
+    font-size: 17px;
+    font-family: $fontText;
+    font-weight: bold;
+    color: $seccess;
+    display: flex;
+    align-items: center;
+}
+.product .card .body button{
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}

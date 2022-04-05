@@ -1,0 +1,1011 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Tajawal&display=swap");
+img {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.h1 {
+  font-size: 28px;
+  font-family: "Almarai", sans-serif;
+  font-weight: bold;
+  color: #017dfc;
+}
+
+@media (max-width: 576px) {
+  .h1 {
+    font-size: 24px;
+  }
+}
+
+.h2 {
+  font-size: 26px;
+  font-family: "Almarai", sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .h2 {
+    font-size: 21px;
+  }
+}
+
+.h3 {
+  font-size: 20px;
+  font-family: "Almarai", sans-serif;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .lead {
+    font-size: 17px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  line-height: 1.3;
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 15px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.color {
+  background-color: #017dfc;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-25 {
+  height: 25%;
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.h-75 {
+  height: 75%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.share .share-title {
+  font-size: 22px;
+}
+
+.share .socail {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.share .socail .socail-item {
+  margin-left: 10px;
+}
+
+.share .socail .socail-item img {
+  width: 60px;
+  height: 60px;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(10, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(10, 0, 4, 0.1);
+}
+
+nav a {
+  color: #017dfc !important;
+}
+
+nav .open {
+  color: #017dfc !important;
+}
+
+nav .logo img {
+  width: 42px;
+  height: 42px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0px;
+  bottom: -13px;
+  left: 50%;
+  background-color: #017dfc;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+  left: 0px;
+}
+
+nav ul li.active::after {
+  width: 100%;
+  left: 0px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  padding: 15px 12px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-family: "Almarai", sans-serif;
+  font-weight: 800;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+nav .cart {
+  font-size: 25px;
+  text-decoration: none;
+  color: #000 !important;
+}
+
+nav .open {
+  padding: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+nav + .item {
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #017dfc;
+}
+
+.user-name {
+  font-size: 17px;
+  text-transform: capitalize;
+  font-family: "Tajawal", sans-serif;
+}
+
+.icon-down {
+  cursor: pointer;
+}
+
+nav .drop {
+  position: absolute;
+  padding: 5px 3px;
+  min-width: 180px;
+  max-width: 300px;
+  background: #ffffff;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  top: 60px;
+}
+
+nav .drop.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav .drop .item {
+  width: 100%;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+nav .drop .item:last-child {
+  border-bottom: none;
+}
+
+nav .drop .item a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 5px;
+  font-size: 15px;
+  font-family: "Tajawal", sans-serif;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  color: #777;
+  text-transform: capitalize;
+}
+
+.siedbar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: -600px;
+  top: 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  z-index: 99999;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+  overflow-y: scroll;
+}
+
+.siedbar::-webkit-scrollbar {
+  width: 6px;
+  height: 5px !important;
+}
+
+.siedbar::-webkit-scrollbar-thumb {
+  background: #017dfc;
+  border-radius: 5px;
+}
+
+.siedbar.show {
+  right: 0;
+}
+
+.siedbar .btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 15px;
+}
+
+.siedbar .btn-close button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.siedbar .logo {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.siedbar .logo img {
+  width: 64px;
+  height: 64px;
+}
+
+.siedbar .menu {
+  padding: 0 15px;
+  margin: 0;
+  list-style: none;
+  height: auto;
+}
+
+.siedbar .menu .menu-item {
+  padding: 4px 0;
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #017dfc;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  cursor: pointer;
+}
+
+.siedbar .menu .menu-item a {
+  text-decoration: none;
+  color: #017dfc;
+  font-size: 18px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: block;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.siedbar .menu .menu-item:hover ul {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
+
+.siedbar .menu .menu-item ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  opacity: 0;
+}
+
+.siedbar .menu .menu-item ul li {
+  width: 100%;
+}
+
+.siedbar .menu .menu-item ul li a {
+  width: 100%;
+  display: block;
+  padding: 8px 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 700;
+  color: #666;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+svg {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+footer {
+  padding-bottom: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#252c36), to(#252c32));
+  background: linear-gradient(to right, #252c36, #252c32);
+  background-size: cover;
+}
+
+footer .link .title {
+  font-size: 22px;
+  margin: 0px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+  color: #017dfc;
+}
+
+footer .link .list-link {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+footer .link .list-link li {
+  padding: 3px 0;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+footer .link .list-link li a {
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  color: #f8f8f9;
+  font-family: "Tajawal", sans-serif;
+}
+
+footer .link .list-link li a:hover {
+  margin-left: 3px;
+  color: #017dfc;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  font-family: "Almarai", sans-serif;
+  font-size: 16px;
+  background-color: #017dfc;
+  color: #fff !important;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  border: 1px solid #017dfc;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #017dfc !important;
+  border: 1px solid #017dfc;
+}
+
+.button-out {
+  padding: 10px 15px;
+  border: none;
+  font-family: "Almarai", sans-serif;
+  background-color: transparent;
+  color: #017dfc;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  border: 1px solid #017dfc;
+}
+
+.button-out:hover {
+  background-color: #017dfc;
+  color: #fff;
+  border: 1px solid #017dfc;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  position: relative;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card .head {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card .head img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.card .body {
+  position: relative;
+  padding: 10px 12px;
+}
+
+.card .body .title {
+  margin: 12px 0;
+  font-size: 18px;
+  color: #017dfc;
+  font-weight: bold;
+  font-family: "Almarai", sans-serif;
+  line-height: 1.5;
+}
+
+.card .body .desc {
+  font-size: 17px;
+  font-family: "Tajawal", sans-serif;
+  color: #000;
+}
+
+img {
+  width: 100%;
+}
+
+.header-auction img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-auction .title {
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #017dfc;
+  font-family: "Almarai", sans-serif;
+}
+
+.header-auction .descraption {
+  font-size: 16px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.fillter {
+  background: #fffffe;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1);
+  padding: 15px 0px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.fillter.hidden {
+  height: 45px;
+}
+
+.fillter .head .title {
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+}
+
+.fillter .head .btn-toggle-fillter {
+  font-size: 18px;
+  font-family: "Almarai", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.fillter .head .btn-toggle-fillter:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fillter .head .btn-toggle-fillter.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fillter .search {
+  padding: 5px;
+  width: 100%;
+}
+
+.fillter .search form {
+  width: 100%;
+}
+
+.fillter .search input {
+  outline: none;
+  color: #000;
+  padding: 5px;
+  width: 95% !important;
+}
+
+.fillter .search button {
+  padding: 5px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+}
+
+.fillter .item {
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.fillter .item:last-child {
+  border-bottom: none;
+}
+
+.fillter .item .title-item {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Tajawal", sans-serif;
+  text-transform: capitalize;
+}
+
+.fillter .item .content .budge {
+  width: 100%;
+}
+
+.fillter .item .btn-toggle {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Tajawal", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.fillter .item .btn-toggle.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fillter .item .btn-toggle:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fillter .item .content {
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.fillter .item .content.hidden {
+  height: 0px;
+}
+
+.fillter .item .content .check-line {
+  margin-bottom: 3px;
+}
+
+.fillter .item .content .check-line input {
+  margin-right: 0;
+}
+
+.fillter .item .content label {
+  margin-left: 0;
+  font-family: "Tajawal", sans-serif;
+}
+
+.auction .card {
+  border-radius: 3px;
+  overflow: hidden;
+  background: #ffffff;
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1), 0 -4px 6px 0 rgba(12, 0, 4, 0.1);
+          box-shadow: 0 4px 6px 0 rgba(12, 0, 4, 0.1), 0 -4px 6px 0 rgba(12, 0, 4, 0.1);
+}
+
+.auction .card .top {
+  padding: 12px 8px;
+}
+
+.auction .card .top h4 {
+  font-family: "Almarai", sans-serif;
+  margin: 5px 0;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.auction .card .top span {
+  font-family: "Tajawal", sans-serif;
+  font-size: 15px;
+}
+
+.auction .card .head {
+  min-height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.auction .card .head .over {
+  position: absolute;
+  top: 0;
+  left: -600px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.5);
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auction .card .head .over button {
+  text-transform: capitalize;
+}
+
+.auction .card:hover .head .over {
+  left: 0px;
+}
+
+.auction .card .head img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.model {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99999;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.model .model-card {
+  width: 70vw;
+  height: 65vh;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+@media (max-width: 720px) {
+  .model .model-card {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .model .model-card {
+    width: 90vw;
+  }
+}
+
+.model .model-card .head-model {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #cccbcb;
+}
+
+.model .model-card .head-model .title,
+.model .model-card .head-model .close-model {
+  font-size: 18px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.model.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.model .model-card .model-content {
+  margin: 0;
+}
+
+.model .model-card .model-content .slide {
+  width: 100%;
+  height: 400px;
+}
+
+.model .model-card .model-content .slider {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.model .model-card .model-content .slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.model .model-card .model-content .plitte {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.model .model-card .model-content .plitte .tube img {
+  width: 50px;
+  height: 60px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.model .model-card .model-content .body .title {
+  font-size: 22px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+}
+
+.model .model-card .model-content .body .descraption {
+  font-size: 18px;
+  font-family: "Tajawal", sans-serif;
+  text-transform: capitalize;
+}
+
+.model .model-card .model-content .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.auction .card .body {
+  padding: 12px 8px;
+}
+
+.auction .card .body .title {
+  margin: 0;
+  font-size: 15px;
+  color: #017dfc;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+}
+
+.auction .card .body .title a {
+  color: #017dfc !important;
+}
+
+.auction .card .body .text {
+  font-size: 14px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.auction .card .body .value {
+  font-size: 14px;
+  font-family: "Almarai", sans-serif;
+  text-transform: capitalize;
+}
+
+.auction .card .body .footer button {
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.auction .card .body .detils {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px 7px;
+}
+
+.auction .card .body .detils .bid-end {
+  font-family: "Tajawal", sans-serif;
+  font-size: 16px;
+}
+
+.auction .card .body .detils .price {
+  font-family: "Almarai", sans-serif;
+  font-size: 16px;
+  color: #0ccc0c;
+}
+/*# sourceMappingURL=auction-page.css.map */

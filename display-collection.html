@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid-rtl.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&display=swap'" >
+    <link rel="stylesheet" href="./assets/css/dashbord.css">
+    <title>عرض المجموعات</title>
+</head>
+<body>
+
+    <nav>
+        <div class="container d-flex justify-content-between">
+            <div dir="ltr" class="item d-none d-lg-flex align-items-center">
+                <!-- <a href="./cart.html" class="cart"><i class="fi-rr-shopping-cart"></i></a>
+                <a href="./login.html" class="button">login</a>
+                <a href="/" class="button-out ml-1">sign up</a> -->
+                <div dir="ltr" class="d-flex align-items-center">
+                    <img class="user-avatar" src="./images/facebook.png" alt="">
+                    <p class="user-name m-0 ml-1">ahmed esam</p>
+                    <i class="fas fa-caret-down icon-down"></i>
+                    <div class="drop ">
+                        <span class="item"><a href="./dashbord-user.html">profile</a></span>
+                        <span class="item"><a href="./dashbord-user.html">dashbord</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="d-none d-lg-flex">
+                <li class="active"><a href="/">الرائسية</a></li>
+                <li><a href="./auctions.html">مزادات</a></li>
+                <li><a href="./pipa.html">حمام بسعر ثابت</a></li>
+                <li><a href="./shop.html">المتجر</a></li>
+                <li><a href="./articles.html">مقالات</a></li>
+                <li><a href="./about.html">من نحن</a></li>
+            </ul>
+
+            <div dir="ltr" class="item d-flex d-lg-none align-items-center">
+                <a href="./cart.html" class="cart mr-3"><i class="fi-rr-shopping-cart"></i></a>
+                <button class="open"><i class="fi-rr-align-justify"></i></button>
+            </div>
+            <div class="logo">
+                <a href="/">
+                    <img src="./images/network.svg" alt="logo" />
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="siedbar">
+        <div class="btn-close">
+            <button><i class="fi-rr-cross"></i></button>
+        </div>
+        <div class="logo mt-4 d-flex flex-column">
+            <img class="user-avatar" src="./images/facebook.png" alt="">
+            <p class="user-name m-0 mt-2">ahmed esam</p>
+        </div>
+            <ul class="menu mt-4">
+                <li class="menu-item"><a href="/">الرائسية</a></li>
+                <li class="menu-item"><a href="./auctions.html">مزادات</a></li>
+                <li class="menu-item"><a href="./pipa.html">حمام بسعر ثابت</a></li>
+                <li class="menu-item"><a href="./product.html">المتجر</a></li>
+                <li class="menu-item"><a href="./articles.html">مقالات</a></li>
+                <li class="menu-item"><a href="./about.html">من نحن</a></li>
+                <li class="menu-item">
+                    <span class="d-flex justify-content-between ">اعدادات 
+                        <i class="fas fa-caret-down icon-down"></i>
+                    </span>
+                    <ul>
+                        <li><a href="/">profile</a></li>
+                        <li><a href="/">dashbord</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- <div class="mt-4 d-flex justify-content-around">
+                <a href="./login.html" class="button">login</a>
+                <a href="/" class="button-out ml-1">sign up</a>
+            </div> -->
+    </div>
+
+
+
+<aside class="sidebar">
+        <div class="header">
+            <span class="title">sidebar</span>
+            <span class="status">اخفاء</span>
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="./dashbord-user.html">تعديل حسابي</a></li>
+            <li class="menu-item active">
+                <span class="d-flex justify-content-between align-items-center">
+                    <a>مجموعة الحمام</a>
+                    <i class="fas fa-caret-right icon"></i>
+                </span>
+                <ul>
+                    <li><a href="./add-collection.html">اضافة مجموعة</a></li>
+                    <li class="active"><a href="./display-collection.html">عرض مجموعه</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <span class="d-flex justify-content-between align-items-center">
+                    <a> الحمام</a>
+                    <i class="fas fa-caret-right icon"></i>
+                </span>
+                <ul>
+                    <li><a href="./add-bird.html">اضافة الحمام</a></li>
+                    <li><a href="./display-birds.html">عرض الحمام</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <span class="d-flex justify-content-between align-items-center">
+                    <a> المنتجات</a>
+                    <i class="fas fa-caret-right icon"></i>
+                </span>
+                <ul>
+                    <li><a href="./add-product.html">اضافة المنتجات</a></li>
+                    <li><a href="./display-products.html">عرض المنتجات</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <span class="d-flex justify-content-between align-items-center">
+                    <a> المزادات</a>
+                    <i class="fas fa-caret-right icon"></i>
+                </span>
+                <ul>
+                    <li><a href="./add-auction.html">اضافة المزادات</a></li>
+                    <li><a href="./display-auctions.html">عرض المزادات</a></li>
+                    <li><a href="./add-declaration.html">اضافة اعلان</a></li>
+                    <li><a href="./display-declaration.html">عرض اعلان</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <span class="d-flex justify-content-between align-items-center">
+                    <a >الطلبات</a>
+                    <i class="fas fa-caret-right icon"></i>
+                </span>
+                <ul>
+                    <li><a href="/">طلبات منتجات</a></li>
+                    <li><a href="/">طلبات مزادات</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="">تقيمات</a></li>
+            <li class="menu-item"><a href="">المراجعات</a></li>
+        </ul>
+</aside>
+<div class="content-page">
+    <div class="row">
+        <h1 class="title-page">
+            كل المجموعات
+        </h1>
+        <div class="table-container">
+            <div class="our-table mt-4">
+                <div class="our-row table-header">
+                    <div class="our-cill">#</div>
+                    <div class="our-cill">الاسم</div>
+                    <div class="our-cill">الوصف</div>
+                    <div class="our-cill">خيارات</div>
+                </div>
+                <div class="our-row">
+                    <div class="our-cill">1</div>
+                    <div class="our-cill">اسم المنتج</div>
+                    <div class="our-cill">صورة المنتج</div>
+                    <div class="our-cill">خيارات</div>
+                </div>
+                <div class="our-row">
+                    <div class="our-cill">2</div>
+                    <div class="our-cill">اسم المنتج</div>
+                    <div class="our-cill">صورة المنتج</div>
+                    <div class="our-cill">خيارات</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/dashbord.js"></script>
+</body>
+</html>

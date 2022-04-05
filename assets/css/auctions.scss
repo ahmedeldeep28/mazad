@@ -1,0 +1,44 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/component/button';
+@import './sass/component/card';
+@import './sass/helpers/varibail';
+
+
+//style page auctions
+.auctions .card .date-end{
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    background-color: $mainColor;
+    color: #fff;
+    padding: 8px 10px;
+    z-index: 666;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: $fontHeader;
+    transition: all .3s linear;
+    @media (max-width:576px) {
+    top: 0px;
+    }
+}
+.auctions .card:hover .date-end{
+    top: 0px;
+}
+.auctions .card:hover img{
+    transform: scale(1.1);
+}
+
+.auctions .card .body button{
+    font-size: 15px;
+    padding: 10px;
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}
+
+.article .card .body button{
+    font-size: 15px;
+    padding: 10px;
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}

@@ -1,0 +1,263 @@
+@import './sass/layout/navBar';
+@import './sass/layout/footer';
+@import './sass/component/button';
+@import './sass/component/input';
+@import './sass/helpers/varibail';
+
+
+header .title{
+    font-family: $fontHeader;
+    text-transform: capitalize;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.plitte{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plitte .tube img{
+    width: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.detils {
+    direction: $direction;
+}
+.detils .bird-name{
+    margin-top: 0;
+    color: $mainColor;
+}
+.detils .bird-desc {
+    font-family: $fontText;
+    font-size: 19px;
+}
+.time-end,
+.rating{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px 7px;
+    width: 320px;
+}
+.time-end .bid-end{
+    font-family: $fontText;
+    font-size: 16px;
+}
+.time-end .price{
+    font-family: $fontHeader;
+    font-size: 16px;
+    color: $seccess;
+}
+
+.time{
+    font-family: $fontText;
+    margin-left: 3px;
+    font-weight: bold;
+}
+.rating .head .title{
+    font-family: $fontHeader;
+    text-transform: capitalize;
+    font-size: 19px;
+}
+.rating .value{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.rating .open-model{
+    font-family: $fontText;
+    text-transform: capitalize;
+    transition: all .4s linear;
+    cursor: pointer;
+    font-weight: bold;
+    color: $mainColor;
+}
+.rating .open-model:hover{
+    color: $mainColor;
+}
+.button,
+.button-out{
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 99999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    direction: $direction;
+    
+
+}
+.model.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model .model-card{
+    width: 80vw;
+    height: 65vh;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: auto;
+    position: relative;
+    direction: $direction;
+    @media (max-width:720px) {
+        width: 80vw;
+    }
+    @media (max-width:576px) {
+        width: 90vw;
+    }
+
+}
+.model .model-card .head-model{
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(204, 203, 203);
+    direction: $direction;
+}
+.model .model-card .head-model .title,
+.model .model-card .head-model .close-model{
+    font-size: 18px;
+    font-family: $fontHeader;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.model .model-card .model-content .details{
+    margin: 0;
+    display: grid;
+    direction: $direction;
+    grid-template-columns: repeat(4,1fr);
+    @media (max-width:720px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media (max-width:576px) {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.model .model-card .model-content .comments{
+    padding-left: 15px;
+    display: grid;
+    direction: $direction;
+    grid-template-columns: repeat(2,1fr);
+    @media (max-width:720px) {
+        grid-template-columns: repeat(1,1fr);
+    }
+    @media (max-width:576px) {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+.model .model-card .model-content .comments .star .checked {
+    color: #f2b01e;
+}
+.model .model-card .tabe button.acitve {
+    background-color: $mainColor !important;
+    color: #f2f2f2;
+}
+.model .model-card .model-content .details.hed,
+.model .model-card .model-content .comments.hed{
+    display: none;
+}
+
+.model .model-card .model-content .list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    list-style: none;
+}
+.model .model-card .list-title {
+    font-family: $fontHeader;
+    font-size: 19px;
+    margin: 15px 0px;
+}
+.model .model-card .list-item {
+    margin-top: 6px;
+}
+.model .model-card .list-item .key {
+    font-family: $fontText;
+    font-weight: bold;
+    width: 40% !important;
+    display: inline-block;
+}
+.model .model-card .list-item .value {
+    font-family: $fontText;
+}
+
+
+.avatar {
+    width: 50px !important;
+    height: 50px;
+     border-radius: 50%;
+}
+.card-Rating {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card-Rating .user-name {
+    font-family: $fontHeader;
+}
+.card-Rating form input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    cursor: pointer;
+}
+.card-Rating form input:checked + .icon{
+    color: #f2b01e;
+}
+.card-Rating form input:checked ~ .icon{
+    color: #f2b01e;
+}
+
+
+
+.details .our-table {
+    display: table;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+.details .our-table .our-row{
+    display: table-row;
+}
+.details .our-table .our-row.table-header{
+    color: $mainColor;
+    font-family: $fontHeader;
+    font-weight: bold;
+    font-size: 18px;
+}
+.details .our-table .our-row .our-cill {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    font-family: $fontText;
+    font-size: 17px;
+}
+
+
